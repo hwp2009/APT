@@ -1,0 +1,17 @@
+plugins {
+    id 'java-library'
+}
+
+//要手动把这个依赖添加上
+dependencies {
+    //apt 注解处理器是jdk自带 但 javaopet我们要自己添加依赖 不然没法提供生成java文件一些类
+
+    implementation group: 'com.google.auto.service', name: 'auto-service', version: '1.0-rc2'
+    implementation group: 'com.squareup', name: 'javapoet', version: '1.8.0'
+    implementation project(path: ':Annotation')
+
+}
+
+
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
