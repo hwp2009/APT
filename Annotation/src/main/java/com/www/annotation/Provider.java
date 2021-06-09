@@ -5,4 +5,5 @@ package com.www.annotation;
  * @time:
  */
 public interface Provider {
+
 }
